@@ -1,0 +1,66 @@
+﻿@model TheaterClubProject.Models.TblOyuncu
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<br />
+<br />
+<div class="container">
+<h1>Oyuncu Sil</h1>
+
+<h3>Silmek istediğinize emin misiniz?</h3>
+<div>
+    
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OyuncuFoto)
+        </dt>
+        <dd class = "col-sm-10">
+            <img src="@("~/Images/"+Model.OyuncuFoto)" alt="Oyuncu Fotoğrafı" asp-append-version=true width="160" height="230" />
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OyuncuAdSoyad)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OyuncuAdSoyad)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OyuncuTelNo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OyuncuTelNo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OyuncuEmail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OyuncuEmail)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OyuncuDogumTarihi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OyuncuDogumTarihi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OyuncuDogumYeri)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OyuncuDogumYeri)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OyuncuMezunUni)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OyuncuMezunUni)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="OyuncuId" />
+        <input type="submit" value="Sil" class="btn btn-danger" /> |
+        <a class="btn btn-outline-dark"  asp-action="Index">Oyuncu Listesine Geri Dön</a>
+    </form>
+</div>
+</div>

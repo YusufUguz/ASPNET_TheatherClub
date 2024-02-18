@@ -1,0 +1,132 @@
+﻿@model IEnumerable<TheaterClubProject.Models.TblGosteriTakip>
+
+@{
+    Layout = "_Layout";
+}
+<html>
+<head>
+    <title>Gösteri Takibi</title>
+
+    <style>
+        .textSpecs {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <br />
+    <br />
+    <div class="text-center textSpecs">
+        GÖSTERİ TAKİBİ
+        <p>
+            <a class="btn btn-outline-dark align-content-center" asp-action="Create">Yeni Gösteri Ekle</a>
+        </p>
+    </div>
+
+</body>
+</html>
+
+<table class="table table-bordered table-striped " id="tbllist">
+    <thead class=" bg-dark text-white">
+        <tr>
+            <th>
+                Gösteri ID
+            </th>
+            <th>
+                Gösteri Fotoğrafı
+            </th>
+            <th>
+                Gösteri Adı
+            </th>
+            <th>
+                Gösteri Oyuncular
+            </th>
+            <th>
+                Gösteri Sahne Arkası Ekibi
+            </th>
+            <th>
+                Gösteri Fiyatı
+            </th>
+            <th>
+                Gösteri Tarihi
+            </th>
+            <th>
+                Gösteri Oyun
+            </th>
+            <th>
+                Gösteri Salon
+            </th>
+            <th>
+                Gösteri Şehir
+            </th>
+            <th>
+                Gösteri Şehir/İlçe
+            </th>
+            <th>Eylemler</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+                <td style="text-align: center; vertical-align: middle">
+                    @Html.DisplayFor(modelItem => item.GosteriId)
+                </td>
+                <td style="text-align: center; vertical-align: middle">
+                    <img src="@("~/Images/"+item.GosteriFoto)" alt="Gösteri Fotoğrafı" asp-append-version=true width="80" height="120" />
+            </td>
+                <td style="text-align: center; vertical-align: middle">
+                @Html.DisplayFor(modelItem => item.GosteriAd)
+            </td>
+            <td style="text-align: center; vertical-align: middle">
+                @Html.DisplayFor(modelItem => item.GosteriOyuncular)
+            </td>
+                <td style="text-align: center; vertical-align: middle">
+                @Html.DisplayFor(modelItem => item.GosteriSahneArkasi)
+            </td>
+                <td style="text-align: center; vertical-align: middle">
+                @Html.DisplayFor(modelItem => item.GosteriFiyat)
+            </td>
+                <td style="text-align: center; vertical-align: middle">
+                @Html.DisplayFor(modelItem => item.GosteriTarih)
+            </td>
+                <td style="text-align: center; vertical-align: middle">
+                @Html.DisplayFor(modelItem => item.GosteriOyun!.OyunAd)
+            </td>
+                <td style="text-align: center; vertical-align: middle">
+                @Html.DisplayFor(modelItem => item.GosteriSalon!.SalonAd)
+            </td>
+                <td style="text-align: center; vertical-align: middle">
+                @Html.DisplayFor(modelItem => item.GosteriSehir!.SehirBilgi)
+            </td>
+                <td style="text-align: center; vertical-align: middle">
+                @Html.DisplayFor(modelItem => item.GosteriSehirilce!.SehirilceBilgi)
+            </td>
+            <td >
+                    <a class="btn btn-outline-dark" asp-action="Edit" asp-route-id="@item.GosteriId">Düzenle</a> 
+                    <a class="btn btn-outline-dark" asp-action="Details" asp-route-id="@item.GosteriId">Detaylar</a> 
+                    <a class="btn btn-outline-dark" asp-action="Delete" asp-route-id="@item.GosteriId">Sil</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+
+<script type="text/javascript">
+
+    var js = jQuery.noConflict(true);
+
+    js(document).ready(function () {
+
+        js('#tbllist').DataTable({
+
+        });
+
+
+    });</script>

@@ -1,0 +1,69 @@
+﻿@model TheaterClubProject.Models.TblOyuncu
+
+@{
+    ViewData["Title"] = "Create";
+}
+<br />
+<br />
+<div class="container">
+<h1>Yeni Oyuncu Oluştur</h1>
+
+<h5>Oyuncu Bilgileri</h5>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="OyuncuId" class="control-label"></label>
+                <input asp-for="OyuncuId" class="form-control" />
+                <span asp-validation-for="OyuncuId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageFile" class="control-label"></label>
+                <input asp-for="ImageFile" accept="image/*" />
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OyuncuAdSoyad" class="control-label"></label>
+                <input asp-for="OyuncuAdSoyad" class="form-control" />
+                <span asp-validation-for="OyuncuAdSoyad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OyuncuTelNo" class="control-label"></label>
+                <input asp-for="OyuncuTelNo" class="form-control" />
+                <span asp-validation-for="OyuncuTelNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OyuncuEmail" class="control-label"></label>
+                <input asp-for="OyuncuEmail" class="form-control" />
+                <span asp-validation-for="OyuncuEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OyuncuDogumTarihi" class="control-label"></label>
+                <input asp-for="OyuncuDogumTarihi" class="form-control" />
+                <span asp-validation-for="OyuncuDogumTarihi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OyuncuDogumYeri" class="control-label"></label>
+                <input asp-for="OyuncuDogumYeri" class="form-control" />
+                <span asp-validation-for="OyuncuDogumYeri" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OyuncuMezunUni" class="control-label"></label>
+                <input asp-for="OyuncuMezunUni" class="form-control" />
+                <span asp-validation-for="OyuncuMezunUni" class="text-danger"></span>
+            </div>
+                <br />
+            <div class="form-group">
+                <input type="submit" value="Yeni Oyuncu Oluştur" class="btn btn-outline-dark" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-outline-dark" asp-action="Index">Oyuncu Listesine Geri Dön</a>
+</div>
+</div>
+

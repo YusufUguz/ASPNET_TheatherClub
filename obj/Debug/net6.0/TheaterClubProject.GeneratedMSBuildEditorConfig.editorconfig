@@ -1,0 +1,164 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TheaterClubProject
+build_property.RootNamespace = TheaterClubProject
+build_property.ProjectDir = C:\Users\Yusuf\source\repos\TheaterClubProject\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Yusuf\source\repos\TheaterClubProject
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/Startp/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhcnRwXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblGosteriSalonus/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsR29zdGVyaVNhbG9udXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblGosteriSalonus/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsR29zdGVyaVNhbG9udXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblGosteriSalonus/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsR29zdGVyaVNhbG9udXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblGosteriSalonus/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsR29zdGVyaVNhbG9udXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblGosteriSalonus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsR29zdGVyaVNhbG9udXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblGosteriTakips/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsR29zdGVyaVRha2lwc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblGosteriTakips/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsR29zdGVyaVRha2lwc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblGosteriTakips/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsR29zdGVyaVRha2lwc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblGosteriTakips/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsR29zdGVyaVRha2lwc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblGosteriTakips/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsR29zdGVyaVRha2lwc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblOyuncus/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsT3l1bmN1c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblOyuncus/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsT3l1bmN1c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblOyuncus/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsT3l1bmN1c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblOyuncus/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsT3l1bmN1c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblOyuncus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsT3l1bmN1c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblOyuns/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsT3l1bnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblOyuns/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsT3l1bnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblOyuns/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsT3l1bnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblOyuns/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsT3l1bnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblOyuns/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsT3l1bnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblSaAlans/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsU2FBbGFuc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblSaAlans/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsU2FBbGFuc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblSaAlans/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsU2FBbGFuc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblSaAlans/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsU2FBbGFuc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblSaAlans/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsU2FBbGFuc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblSahneArkasis/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsU2FobmVBcmthc2lzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblSahneArkasis/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsU2FobmVBcmthc2lzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblSahneArkasis/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsU2FobmVBcmthc2lzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblSahneArkasis/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsU2FobmVBcmthc2lzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/TblSahneArkasis/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsU2FobmVBcmthc2lzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yusuf/source/repos/TheaterClubProject/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-pipkjfrtj2

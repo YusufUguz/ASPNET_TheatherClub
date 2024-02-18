@@ -1,0 +1,86 @@
+﻿@model TheaterClubProject.Models.TblGosteriTakip
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<br />
+<br />
+<div class="container">
+
+<h3>Silmek İstediğinize Emin Misiniz?</h3>
+<div>
+    <h4>Oyunu Sil</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+                Gösteri Fotoğrafı
+        </dt>
+        <dd class = "col-sm-10">
+                <img src="@("~/Images/"+Model.GosteriFoto)" alt="Oyun Fotoğrafı" asp-append-version=true width="160" height="230" />
+        </dd>
+        <dt class = "col-sm-2">
+            Gösteri Adı
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GosteriAd)
+        </dd>
+        <dt class = "col-sm-2">
+            Gösteri Oyuncu Ekibi
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GosteriOyuncular)
+        </dd>
+        <dt class = "col-sm-2">
+           Gösteri Sahne Arkası Ekibi
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GosteriSahneArkasi)
+        </dd>
+        <dt class = "col-sm-2">
+            Gösteri Fiyatı
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GosteriFiyat)
+        </dd>
+        <dt class = "col-sm-2">
+            Gösteri Tarihi
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GosteriTarih)
+        </dd>
+        <dt class = "col-sm-2">
+            Gösteri Oyunu
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GosteriOyun!.OyunAd)
+        </dd>
+        <dt class = "col-sm-2">
+           Gösteri Salonu
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GosteriSalon!.SalonAd)
+        </dd>
+        <dt class = "col-sm-2">
+            Gösteri Şehir
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GosteriSehir!.SehirBilgi)
+        </dd>
+        <dt class = "col-sm-2">
+            Gösteri Şehir/ilçe
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GosteriSehirilce!.SehirilceBilgi)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="GosteriId" />
+        <input type="submit" value="Sil" class="btn btn-danger" /> |
+            <a class="btn btn-outline-dark" asp-action="Index">Gösteri Listesine Geri Dön</a>
+    </form>
+</div>
+</div>

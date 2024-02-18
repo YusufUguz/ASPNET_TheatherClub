@@ -1,0 +1,59 @@
+﻿@model TheaterClubProject.Models.TblSahneArkasi
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<br />
+<br />
+<div class="container">
+<h1>SA Üyesini Düzenle</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="SahneArkasiId" />
+            <div class="form-group">
+                <label asp-for="ImageFile" class="control-label"></label>
+                <input asp-for="ImageFile" class="image/*" />
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SaAdSoyad" class="control-label"></label>
+                <input asp-for="SaAdSoyad" class="form-control" />
+                <span asp-validation-for="SaAdSoyad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SaTelNo" class="control-label"></label>
+                <input asp-for="SaTelNo" class="form-control" />
+                <span asp-validation-for="SaTelNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SaEmail" class="control-label"></label>
+                <input asp-for="SaEmail" class="form-control" />
+                <span asp-validation-for="SaEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SaAlanId" class="control-label"></label>
+                <select asp-for="SaAlanId" class="form-control" asp-items="ViewBag.SaAlanId"></select>
+                <span asp-validation-for="SaAlanId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SaDogumTarihi" class="control-label"></label>
+                <input asp-for="SaDogumTarihi" class="form-control" />
+                <span asp-validation-for="SaDogumTarihi" class="text-danger"></span>
+            </div>
+                <br />
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-outline-dark"  />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-outline-dark" asp-action="Index">Sahne Arkası Ekibi Listesine Geri Dön</a>
+</div>
+</div>
+

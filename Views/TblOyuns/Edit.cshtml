@@ -1,0 +1,55 @@
+﻿@model TheaterClubProject.Models.TblOyun
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<br />
+<br />
+<div class="container">
+<h1>Düzenle</h1>
+
+<h4>Oyun Bilgileri</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="OyunId" />
+            <div class="form-group">
+                <label asp-for="ImageFile" class="control-label"></label>
+                <input asp-for="ImageFile" accept="images/*" />
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OyunAd" class="control-label"></label>
+                <input asp-for="OyunAd" class="form-control" />
+                <span asp-validation-for="OyunAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OyunTur" class="control-label"></label>
+                <input asp-for="OyunTur" class="form-control" />
+                <span asp-validation-for="OyunTur" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OyunDakika" class="control-label"></label>
+                <input asp-for="OyunDakika" class="form-control" />
+                <span asp-validation-for="OyunDakika" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OyunYasSiniri" class="control-label"></label>
+                <input asp-for="OyunYasSiniri" class="form-control" />
+                <span asp-validation-for="OyunYasSiniri" class="text-danger"></span>
+            </div>
+                <br />
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-outline-dark" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-outline-dark" asp-action="Index">Oyunlar Listesine Geri Dön</a>
+</div>
+</div>
+

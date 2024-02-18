@@ -1,0 +1,78 @@
+﻿@model TheaterClubProject.Models.TblGosteriTakip
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "_Layout";
+}
+<br />
+<br />
+<div class="container">
+    <h1>Gösteriyi Düzenle</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+            <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="GosteriId" />
+            <div class="form-group">
+                <label asp-for="ImageFile" class="control-label"></label>
+                    <input asp-for="ImageFile" class="image/*" />
+                    <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GosteriAd" class="control-label"></label>
+                <input asp-for="GosteriAd" class="form-control" />
+                <span asp-validation-for="GosteriAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GosteriOyunId" class="control-label"></label>
+                <select asp-for="GosteriOyunId" class="form-control" asp-items="ViewBag.GosteriOyunId"></select>
+                <span asp-validation-for="GosteriOyunId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GosteriOyuncular" class="control-label"></label>
+                <input asp-for="GosteriOyuncular" class="form-control" />
+                <span asp-validation-for="GosteriOyuncular" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GosteriSahneArkasi" class="control-label"></label>
+                <input asp-for="GosteriSahneArkasi" class="form-control" />
+                <span asp-validation-for="GosteriSahneArkasi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GosteriSalonId" class="control-label"></label>
+                <select asp-for="GosteriSalonId" class="form-control" asp-items="ViewBag.GosteriSalonId"></select>
+                <span asp-validation-for="GosteriSalonId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GosteriSehirId" class="control-label"></label>
+                <select asp-for="GosteriSehirId" class="form-control" asp-items="ViewBag.GosteriSehirId"></select>
+                <span asp-validation-for="GosteriSehirId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GosteriSehirilceId" class="control-label"></label>
+                <select asp-for="GosteriSehirilceId" class="form-control" asp-items="ViewBag.GosteriSehirilceId"></select>
+                <span asp-validation-for="GosteriSehirilceId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GosteriFiyat" class="control-label"></label>
+                <input asp-for="GosteriFiyat" class="form-control" />
+                <span asp-validation-for="GosteriFiyat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GosteriTarih" class="control-label"></label>
+                <input asp-for="GosteriTarih" class="form-control" />
+                <span asp-validation-for="GosteriTarih" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-outline-dark" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+        <a class="btn btn-outline-dark" asp-action="Index">Gösteri Listesine Geri Dön</a>
+</div>
+</div>
+

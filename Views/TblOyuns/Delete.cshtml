@@ -1,0 +1,54 @@
+﻿@model TheaterClubProject.Models.TblOyun
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<br />
+<br />
+<div class="container">
+<h1>Oyunu Sil</h1>
+
+<h3>Silmek istediğinize emin misiniz?</h3>
+<div>
+    
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OyunFoto)
+        </dt>
+        <dd class = "col-sm-10">
+            <img src="@("~/Images/"+Model.OyunFoto)" alt="Oyun Fotoğrafı" asp-append-version=true width="160" height="230" />
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OyunAd)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OyunAd)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OyunTur)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OyunTur)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OyunDakika)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OyunDakika)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OyunYasSiniri)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OyunYasSiniri)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="OyunId" />
+        <input type="submit" value="Sil" class="btn btn-danger" /> |
+        <a class="btn btn-outline-dark" asp-action="Index">Oyun Listesine Geri Dön</a>
+    </form>
+</div>
+</div>

@@ -1,0 +1,122 @@
+﻿@model IEnumerable<TheaterClubProject.Models.TblOyuncu>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<html>
+<head>
+    <title>Oyuncular</title>
+
+    <style>
+        .textSpecs {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <br />
+    <br />
+    <div class="text-center textSpecs">
+       OYUNCULAR
+        <p>
+            <a class="btn btn-outline-dark align-content-center" asp-action="Create">Yeni Oyuncu Ekle</a>
+        </p>
+    </div>
+
+</body>
+</html>
+
+@*<h1>Index</h1>*@
+
+<table class="table table-bordered table-striped" id=tbllist>
+    <thead class=" bg-dark text-white">
+        <tr>
+            <th>
+                
+                Oyuncu ID
+            </th>
+            <th>
+                Oyuncu Fotoğrafı
+            </th>
+            <th>
+                Oyuncu Ad Soyad
+            </th>
+            <th>
+                Oyuncu Tel Numarası
+            </th>
+            <th>
+                Oyuncunun E-Maili
+            </th>
+            <th>
+                Oyuncunun Doğum Tarihi
+            </th>
+            <th>
+                Oyuncunun Doğum Yeri
+            </th>
+            <th>
+                Mezun Olduğu Üniversite
+            </th>
+            <th>Eylemler</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+                <td style="text-align: center; vertical-align: middle">
+                    
+                @Html.DisplayFor(modelItem => item.OyuncuId)
+            </td>
+                <td style="text-align: center; vertical-align: middle">
+                    <img src="@("~/Images/"+item.OyuncuFoto)" alt="Oyun Fotoğrafı" asp-append-version=true width="80" height="120" />
+            </td>
+                <td style="text-align: center; vertical-align: middle">
+                @Html.DisplayFor(modelItem => item.OyuncuAdSoyad)
+            </td>
+                <td style="text-align: center; vertical-align: middle">
+                @Html.DisplayFor(modelItem => item.OyuncuTelNo)
+            </td>
+                <td style="text-align: center; vertical-align: middle">
+                @Html.DisplayFor(modelItem => item.OyuncuEmail)
+            </td>
+                <td style="text-align: center; vertical-align: middle">
+                @Html.DisplayFor(modelItem => item.OyuncuDogumTarihi)
+            </td>
+                <td style="text-align: center; vertical-align: middle">
+                @Html.DisplayFor(modelItem => item.OyuncuDogumYeri)
+            </td>
+                <td style ="text-align: center; vertical-align: middle">
+                @Html.DisplayFor(modelItem => item.OyuncuMezunUni)
+            </td>
+                <td>
+                    
+                    <a class="btn btn-outline-dark" asp-action="Edit" asp-route-id="@item.OyuncuId">Düzenle</a>
+                    <a class="btn btn-outline-dark" asp-action="Details" asp-route-id="@item.OyuncuId">Detaylar</a>
+                    <a class="btn btn-outline-dark" asp-action="Delete" asp-route-id="@item.OyuncuId">Sil</a>
+              
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+
+<script type="text/javascript">
+
+    var js = jQuery.noConflict(true);
+
+    js(document).ready(function () {
+
+        js('#tbllist').DataTable({
+
+        });
+
+
+    });</script>

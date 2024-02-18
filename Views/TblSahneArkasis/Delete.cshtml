@@ -1,0 +1,59 @@
+﻿@model TheaterClubProject.Models.TblSahneArkasi
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<br />
+<br />
+<div class="container">
+<h1>Sahne Arkası Üyesi Sil</h1>
+
+<h3>Silmek istediğinize emin misiniz?</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SaFoto)
+        </dt>
+        <dd class = "col-sm-10">
+            <img src="@("~/Images/"+Model.SaFoto)" alt="Oyun Fotoğrafı" asp-append-version=true width="160" height="230" />
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SaAdSoyad)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SaAdSoyad)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SaTelNo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SaTelNo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SaEmail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SaEmail)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SaDogumTarihi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SaDogumTarihi)
+        </dd>
+        <dt class = "col-sm-2">
+            SA Üyesinin Alanı
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SaAlan.SaAlan)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="SahneArkasiId" />
+        <input type="submit" value="Sil" class="btn btn-danger" /> |
+        <a class="btn btn-outline-dark" asp-action="Index">Sahne Arkası Ekibi Listesine Geri Dön</a>
+    </form>
+</div>
+</div>

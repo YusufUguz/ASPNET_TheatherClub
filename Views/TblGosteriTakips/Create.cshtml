@@ -1,0 +1,111 @@
+﻿@model TheaterClubProject.Models.TblGosteriTakip
+
+@{
+    Layout = "_Layout";
+}
+
+<br />
+<br />
+<div class="container">
+
+<h1>Gösteri Oluştur</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+            <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="GosteriId" class="control-label"></label>
+                <input asp-for="GosteriId" class="form-control" />
+                <span asp-validation-for="GosteriId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageFile" class="control-label"></label>
+                    <input asp-for="ImageFile" class="image/*" />
+                    <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GosteriAd" class="control-label"></label>
+                <input asp-for="GosteriAd" class="form-control" />
+                <span asp-validation-for="GosteriAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GosteriOyunId" class="control-label"></label>
+                <select asp-for="GosteriOyunId" class ="form-control" asp-items="ViewBag.GosteriOyunId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="GosteriOyuncular" class="control-label"></label>
+                <input asp-for="GosteriOyuncular" class="form-control" />
+                <span asp-validation-for="GosteriOyuncular" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GosteriSahneArkasi" class="control-label"></label>
+                <input asp-for="GosteriSahneArkasi" class="form-control" />
+                <span asp-validation-for="GosteriSahneArkasi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GosteriSalonId" class="control-label"></label>
+                <select asp-for="GosteriSalonId" class ="form-control" asp-items="ViewBag.GosteriSalonId"></select>
+            </div>
+            <div class="form-group">
+
+                <label asp-for="GosteriSehirId" class="control-label"></label>
+                    @Html.DropDownListFor(model => model.GosteriSehirId,ViewBag.ListofSehir as SelectList,"İl Seçiniz",new {@class="form-control"})
+            </div>
+            <div class="form-group">
+                  
+                <label asp-for="GosteriSehirilceId" class="control-label"></label>              
+                @Html.DropDownListFor(model => model.GosteriSehirilceId,new SelectList(""),"İlçe Seçiniz",new {@class="form-control"})
+      
+            </div>
+            <div class="form-group">
+                <label asp-for="GosteriFiyat" class="control-label"></label>
+                <input asp-for="GosteriFiyat" class="form-control" />
+                <span asp-validation-for="GosteriFiyat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GosteriTarih" class="control-label"></label>
+                <input asp-for="GosteriTarih" class="form-control" />
+                <span asp-validation-for="GosteriTarih" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Oluştur" class="btn btn-outline-dark" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+        <a class="btn btn-outline-dark" asp-action="Index">Gösteri Listesine Geri Dön</a>
+</div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#GosteriSehirId').change(function () {
+            var id = $('#GosteriSehirId').val();
+            $.ajax({
+                url: "@Url.Action("GetSehirilce","TblGosteriTakips")",
+                data: { SehirId: id },
+                type: "POST",
+                dataType: "Json",
+                success: function (data) {
+                    console.log(data);
+                    $('#GosteriSehirilceId').empty();
+                    for (var i = 0; i < data.length; i++) {
+                        $('#GosteriSehirilceId').append("<option value='" + data[i].Value + "'>" + data[i].Text + "</Option>");
+                    }
+                }
+            });
+        });
+    });
+</script>
+
+
+
+

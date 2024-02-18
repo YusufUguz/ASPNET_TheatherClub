@@ -1,0 +1,45 @@
+﻿@model TheaterClubProject.Models.TblGosteriSalonu
+
+@{
+    ViewData["Title"] = "Details";
+}
+<br />
+<br />
+<div class="container">
+<h1>Detaylar</h1>
+
+<div>
+    
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SalonAd)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SalonAd)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SalonAdres)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SalonAdres)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SalonTelNo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SalonTelNo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SalonEmail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SalonEmail)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-outline-dark" asp-action="Edit" asp-route-id="@Model?.SalonId">Düzenle</a> |
+    <a class="btn btn-outline-dark" asp-action="Index">Salon Listesine Geri Dön</a>
+</div>
+</div>

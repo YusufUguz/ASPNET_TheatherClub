@@ -1,0 +1,50 @@
+﻿@model TheaterClubProject.Models.TblGosteriSalonu
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<br />
+<br />
+<div class="container">
+<h1>Salonu Düzenle</h1>
+
+<h5>Salon Bilgileri</h5>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="SalonId" />
+            <div class="form-group">
+                <label asp-for="SalonAd" class="control-label"></label>
+                <input asp-for="SalonAd" class="form-control" />
+                <span asp-validation-for="SalonAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SalonAdres" class="control-label"></label>
+                <input asp-for="SalonAdres" class="form-control" />
+                <span asp-validation-for="SalonAdres" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SalonTelNo" class="control-label"></label>
+                <input asp-for="SalonTelNo" class="form-control" />
+                <span asp-validation-for="SalonTelNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SalonEmail" class="control-label"></label>
+                <input asp-for="SalonEmail" class="form-control" />
+                <span asp-validation-for="SalonEmail" class="text-danger"></span>
+            </div>
+                <br />
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-outline-dark" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-outline-dark" asp-action="Index">Salon Listesine Geri Dön</a>
+</div>
+</div>
+
