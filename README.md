@@ -15,8 +15,8 @@ Technologies:<br />
 :pushpin: MSSQL <br />
 
 Login Screen<br />
-![Login Screen](1.JPG)<br /> 
+![Login Screen](aspnet1.JPG)<br /> 
 An Example Screen<br />
-![A Example Screen](2.JPG)<br />
+![A Example Screen](aspnet2.JPG)<br />
 
 This project developed by [YusufUguz](https://github.com/YusufUguz)<br />
